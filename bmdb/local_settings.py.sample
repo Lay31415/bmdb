@@ -1,0 +1,18 @@
+# SECRET_KEYを生成するには以下を実行します。
+# python generate_SECRET_KEY.py >> local_settings.py
+SECRET_KEY = ''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+
+# 静的ファイルの保存場所を指定し以下を実行します。
+# python manage.py collectstatic
+STATIC_ROOT = "/var/www/uir.bm5keys-forever.com/static/"
